@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,lazy} from 'react'
 import logo from '../assets/Untitled_design__1_-removebg-preview.png'
 import Hero from './Hero'
 import { IoMdLogIn } from "react-icons/io";
