@@ -1,5 +1,5 @@
 import React from 'react'
-import image1 from '../assets/alora-griffiths-LOnMc8Rp1Qs-unsplash-removebg-preview (1).png'
+import image1 from '../assets/alora-griffiths-LOnMc8Rp1Qs-unsplash (1).jpg'
 import image2 from '../assets/victor-freitas-KkYWWpurqbE-unsplash.jpg'
 import image3 from '../assets/edgar-chaparro-sHfo3WOgGTU-unsplash (1).jpg'
 import image4 from '../assets/scott-webb-U5kQvbQWoG0-unsplash (1).jpg'
