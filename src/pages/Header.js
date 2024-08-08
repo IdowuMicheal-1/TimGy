@@ -21,7 +21,7 @@ const Header = () => {
     const closeHam= 'z-40 block hambuger md:hidden focus:outline-none'
   return (
     <div>
-        <section className="mx-auto px-6 py-8 bg-gradient-to-br from-black from-10% via-white via-80% to-pink to-10%  w-full">
+        <section className="mx-auto px-6 py-8 bg-gradient-to-br from-black to-pink w-full">
             <nav className='flex justify-between items-center border-b min-w-full'>
                 <div>
                     <img src={logo} alt="logo" className='w-28 h-28 z-60 text-white'/>
