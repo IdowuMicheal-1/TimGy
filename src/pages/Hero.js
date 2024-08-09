@@ -4,7 +4,7 @@ import heros from '../assets/alora-griffiths-LOnMc8Rp1Qs-unsplash-removebg-previ
 const Hero = () => {
   return (
     <div>
-        <section className='mt-52 md:mt-12 md:ml-4 flex flex-col md:flex-row md:justify-between md:items-center space-y-6 md:space-x-6'>
+        <section className='mt-52 md:mt-52 md:ml-4 flex flex-col md:flex-row md:justify-between md:items-center space-y-6 md:space-x-6'>
             <div className='flex flex-col md:flex-col space-y-4 items-center justify-center md:items-start md:mt-0 '>
             <h1 className='text-xl md:text-3xl font-bold mx-0 text-pink' >Unleash Your Inner Strength</h1>
             <p className='text-white font-medium max-w-md text-center md:text-left'>Join us at TIMGYM to transform your body and mind. With state-of-the-art equipment, expert trainers, and a supportive community, your fitness journey starts here.</p>

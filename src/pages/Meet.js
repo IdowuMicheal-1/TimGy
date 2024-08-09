@@ -13,7 +13,7 @@ const Meet = () => {
         <h2 className='text-white text-4xl'>Meet Our <span className='text-pink'>Trainers</span></h2>
         <p className='text-white max-w-lg text-center'>Our team of certified and experienced trainers is here to guide you every step of the way.</p>
         </div>
-        <div className='mx-4 grid grid-cols-1 md:grid-cols-3 gap-2 md:max-w-4xl md:mx-auto'>
+        <div className='mx-4 grid grid-cols-1 md:grid-cols-3 gap-2 md:max-w-4xl md:mx-auto pb-6'>
           <img src={image1} alt='one' className='w-full h-80 object-cover rounded-md' loading="lazy"/>
           <img src={image2} alt='two' className='w-full h-full object-cover rounded-md md:col-start-2 md:col-end-6 md:row-start-1 md:row-end-3' loading="lazy"/>
           <img src={image3} alt='three' className='w-full h-80 object-cover rounded-md' loading="lazy"/>

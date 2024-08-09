@@ -15,14 +15,14 @@ const Header = () => {
     const btnHandler = () => {
         setShow((prev) => !prev)
     }
-    const displayHam = 'absolute py-20 pl-12 px-6 top-0 right-0 bottom-0 flex flex-col bg-gradient-to-br from-black to-pink  text-lg text-white md:hidden min-h-fit w-full space-y-2 '
-    const hideHam = 'absolute py-20 pl-12 px-6 top-0 right-0 bottom-0 hidden flex-col bg-gradient-to-br from-black to-pink text-lg text-white md:hidden min-h-fit w-full space-y-2 '
-    const openHam= 'z-40 block open hambuger md:hidden focus:outline-none'
-    const closeHam= 'z-40 block hambuger md:hidden focus:outline-none'
+    const displayHam = 'fixed mt-12 py-20 pl-12 px-6 top-0 right-0 bottom-0 flex flex-col bg-gradient-to-br from-black to-pink  text-lg text-white md:hidden min-h-fit w-full space-y-2 z-40'
+    const hideHam = 'fixed mt-12 py-20 pl-12 px-6 top-0 right-0 bottom-0 hidden flex-col bg-gradient-to-br from-black to-pink text-lg text-white md:hidden min-h-fit w-full space-y-2 z-40'
+    const openHam= ' fixed z-40 block open hambuger md:hidden focus:outline-none'
+    const closeHam= 'fixed z-40 block hambuger md:hidden focus:outline-none'
   return (
     <div>
         <section className="mx-auto px-6 py-8 bg-gradient-to-br from-black to-pink w-full">
-            <nav className='flex justify-between items-center border-b min-w-full'>
+            <nav className=' md:fixed md:top-0 md:left-0 md:z-50 flex justify-between items-center border-b min-w-full bg-gradient-to-br from-black to-pink w-full top-0 left-0 fixed z-50 pr-12'>
                 <div>
                     <img src={logo} alt="logo" className='w-28 h-28 z-60 text-white'/>
                 </div>
@@ -32,25 +32,25 @@ const Header = () => {
                     <div className='group-hover:border-b group-hover:mx-2 group-hover:bg-blue-50'></div>
                     </div>
                     <div className='group'>
-                    <a href="#trainers">Trainers</a>
+                    <a href="#trainers">Why TIMGYM</a>
                     <div className='group-hover:border-b group-hover:mx-2 group-hover:bg-blue-50'></div>
                     </div>
                     <div className='group'>
-                    <a href="#program">Programs</a>
+                    <a href="#safety">Safety First</a>
                     <div className='group-hover:border-b group-hover:mx-2 group-hover:bg-blue-50'></div>
                     </div>
                     <div className='group'>
-                    <a href="#pricing">Pricing</a>
+                    <a href="#trainerss">Our Trainers</a>
                     <div className='group-hover:border-b group-hover:mx-2 group-hover:bg-blue-50'></div>
                     </div>
                     <div className='group'>
-                    <a href="#aboutus">About Us</a>
+                    <a href="#fq">FAQs</a>
                     <div className='group-hover:border-b group-hover:mx-2 group-hover:bg-blue-50'></div>
                     </div>
                     
                 </div>
                 <div className='hidden md:block'>
-                    <a href="#login" className='bg-pink px-6 py-3 text-white border border-white rounded-lg flex items-center justify-center space-x-4'><IoMdLogIn className='text-white'/>Login</a>
+                    <a href="#fq" className='bg-pink px-6 py-3 text-white border border-white rounded-lg flex items-center justify-center space-x-4'><IoMdLogIn className='text-white'/>Learn More</a>
                 </div>
                 <div className='md:hidden'>
                 <button id='menu-btn' type='button' className={show ? openHam: closeHam} onClick={btnHandler}>
@@ -62,15 +62,15 @@ const Header = () => {
             </nav>
             <div className={show? displayHam:hideHam}>
                 <a href='#home' className='hover:text-pink'>Home</a>
-                <a href="#trainers" className='hover:text-pink'>Trainers</a>
-                <a href="#program" className='hover:text-pink'>Programs</a>
-                <a href="#pricing" className='hover:text-pink'>Pricing</a>
-                <a href="#aboutus" className='hover:text-pink'>About Us</a>
+                <a href="#trainers" className='hover:text-pink'>Why TIMGYM</a>
+                <a href="#safety" className='hover:text-pink'>Safety First</a>
+                <a href="#trainerss" className='hover:text-pink'>Our Trainers</a>
+                <a href="#fq" className='hover:text-pink'>FAQs</a>
 
             </div>
            
             <Hero />
-            <div className='flex items-center justify-center flex-col mt-6 space-y-6 md:flex-row md:justify-between md:max-w-xl ml-6 md:space-y-0 md:items-center'>
+            <div id="trainers" className='flex items-center justify-center flex-col mt-6 space-y-6 md:flex-row md:justify-between md:max-w-xl ml-6 md:space-y-0 md:items-center'>
                 <div className='flex items-center justify-center flex-col space-y-2'>
                     <h4 className='text-black font-bold text-2xl'>70+</h4>
                     <p className='font-medium text-lg'>Expert Trainers</p>
@@ -86,11 +86,26 @@ const Header = () => {
             </div>
         
         </section>
-        <Fitness />
+        <div  id="trainers">
+        <Fitness/>
+        </div>
+       
+        <div id="safety">
         <FitnessCatlogue />
+        </div>
+       
+        <div id="trainerss">
         <Meet />
+        </div>
+       
+        <div id='fq'>
         <Frequently />
+        </div>
+       
+        <div>
         <Footer />
+        </div>
+       
     </div>
   )
 }
