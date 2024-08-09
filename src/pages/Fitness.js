@@ -10,7 +10,7 @@ const Fitness = () => {
         <h4 className='text-2xl font-medium flex items-center justify-center'>Why Choose TIMGYM?</h4>
         <p className='text-gray-500 text-md mx-auto text-center p-3 md:max-w-4xl'>Discover a new level of fitness at TIMGYM . With cutting-edge equipment, experienced trainers, and a variety of classes, we are here to support you every step of the way.</p>
         </div>
-        <div className='flex flex-col items-center justify-center md:flex-row md:items-center md:justify-center md:mx-auto md:max-w-full space-y-6 md:space-y-0 w-full md:ml-28'>
+        <div className='flex flex-col items-center justify-center md:flex-row md:items-center md:justify-center md:mx-auto md:max-w-full space-y-6 md:space-y-0 w-full md:ml-8'>
             <div className='shadow-sm w-[90%] shadow-gray-800 rounded-2xl m-6 max-w-md flex items-left justify-center flex-col px-4 py-8 mx-auto md:w-[30%] md:h-96'>
             <TbGymnastics style={{fontSize:'150px'}}  className='text-pink'/>
             <h4 className='text-lg font-bold'>Exceptional Facilities and Equipment</h4>
